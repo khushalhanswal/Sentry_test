@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>@sentry/browser SDK examples</title>
+    <!-- <script src="https://browser.sentry-cdn.com/5.0.5/bundle.min.js" crossorigin="anonymous"></script> -->
+    <script src="/Users/khushal_hanswal/Programs/Sentry_test/node_modules/@sentry/browser/build/bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script src="test.js"></script>
+    
+    <script src="otherFile.js"></script>
+    <style>
+      button {
+        display: block;
+        margin: 0.5em 0;
+        font-size: 1em;
+        cursor: pointer;
+        padding: 0.5em;
+      }
+      button:hover {
+        background: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="blacklist-url">blacklistUrl example</button>
+    <button id="whitelist-url">whitelistUrl example</button>
+    <button id="ignore-message" class="btn btn-warning" >ignoreError message example</button>
+    <button id="ignore-type" class="btn btn-warning">ignoreError type example</button>
+    <button id="regular-exception" class="btn btn-warning">regularException example</button>
+    <button id="capture-exception" class="btn btn-info">captureException example</button>
+    <button id="capture-message">captureMessage example</button>
+    <button id="duplicate-exception">duplicated exception example</button>
+    <button id="duplicate-message">duplicated message example</button>
+    <button id="integration-example">integration example</button>
+    <button id="exception-hint"  class="btn btn-info" >event hints example</button>
+    <button id="from-other-file" class="btn btn-info">Other file Events</button>
+    <button id="TypeError" class="btn btn-info">TypeErrors</button>
+    <button data-label="User Defined Label" id="breadcrumb-hint" class="btn btn-info">breadcrumb hints example</button>
+  </body>
+</html>
